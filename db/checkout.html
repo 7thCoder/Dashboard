@@ -8,32 +8,42 @@
 </head>
 <body>
     <div class="main">
-        <img src="images/man.jpg" alt="Product image">
-        <form action="">
-            <div>
-                <label for="name">Product name: </label>
-                <input type="text" name="name" placeholder="Enter your name...">
-            </div>
-            <div>
-                <label for="desc">Product description: </label>
-                <input type="text" name="desc" placeholder="Product description...">
-            </div>
-            <div>
-                <label for="quantity">Quantity: </label>
-                <input type="text" name="quantity" placeholder="Quantity.." value="1">
-            </div>
-
-            <div>
-                <label for="payment">Payment method: </label>
-                <select name="payment" id="">
-                    <option value="">MTN Mobile Money</option>
-                    <option value="">Orange Money</option>
-                    <option value="">Paypal</option>
-                    <option value="">Visa card</option>
-                </select>
-            </div>
-            <button type="submit" name="submit">Place order</button>
-        </form>
+            <img src="images/man.jpg" alt="Product image">
+            <form action="">
+                <h1>Product information</h1>
+                <div>
+                    <label for="name">Product name: </label>
+                    <input type="text" class="inf" name="name" placeholder="Product name..." readonly>
+                </div>
+                <div>
+                    <label for="desc">Product description: </label>
+                    <input type="text" class="inf" name="desc" placeholder="Product description..." readonly>
+                </div>
+                
+                <h1>Payment Info</h1>
+                <div>
+                    <label for="cname">Name: </label>
+                    <input type="text" name="cname" placeholder="Buyer's name..">
+                </div>
+                <div>
+                    <label for="cadress">Adress: </label>
+                    <input type="text" name="cadress" placeholder="Buyer's adress..">
+                </div>
+                <div>
+                    <label for="ccontact">Contact: </label>
+                    <input type="text" name="ccontact" placeholder="Buyer's contact..">
+                </div>
+                <div>
+                    <label for="payment">Payment method: </label>
+                    <select name="payment" id="">
+                        <option value="">MTN Mobile Money</option>
+                        <option value="">Orange Money</option>
+                        <option value="">Paypal</option>
+                        <option value="">Visa card</option>
+                    </select>
+                </div>
+                <button type="submit" name="submit">Place order</button>
+            </form>     
     </div>
 </body>
 </html>
