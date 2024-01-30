@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="checkout.css">
 </head>
 <body>
-    
+    <div class="main">
+        <img src="images/man.jpg" alt="Product image">
+        <form action="">
+            <div>
+                <label for="name">Product name: </label>
+                <input type="text" name="name" placeholder="Enter your name...">
+            </div>
+            <div>
+                <label for="desc">Product description: </label>
+                <input type="text" name="desc" placeholder="Product description...">
+            </div>
+            <div>
+                <label for="quantity">Quantity: </label>
+                <input type="text" name="quantity" placeholder="Quantity.." value="1">
+            </div>
+
+            <div>
+                <label for="payment">Payment method: </label>
+                <select name="payment" id="">
+                    <option value="">MTN Mobile Money</option>
+                    <option value="">Orange Money</option>
+                    <option value="">Paypal</option>
+                    <option value="">Visa card</option>
+                </select>
+            </div>
+            <button type="submit" name="submit">Place order</button>
+        </form>
+    </div>
 </body>
 </html>
